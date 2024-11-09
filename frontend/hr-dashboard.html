@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard - Scout ERP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HR Dashboard</h1>
+        <nav>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Manage Attendance</h2>
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Date</th>
+                    <th>In-Time</th>
+                    <th>Out-Time</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Attendance records will be dynamically added here by JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Salary Calculation</h2>
+        <form id="salaryForm">
+            <label for="employeeId">Employee ID:</label>
+            <input type="text" id="employeeId" name="employeeId" required>
+
+            <label for="month">Month:</label>
+            <input type="month" id="month" name="month" required>
+
+            <button type="submit">Calculate Salary</button>
+        </form>
+
+        <div id="salaryResult">
+            <!-- Calculated salary will be displayed here -->
+        </div>
+    </section>
+
+    <script src="hr-dashboard.js"></script>
+</body>
+</html>

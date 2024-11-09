@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Manager Dashboard - Scout ERP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sales Manager Dashboard</h1>
+        <nav>
+            <a href="logout.html">Logout</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Manage Your Labours</h2>
+        <table id="laboursTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>In-Time</th>
+                    <th>Out-Time</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Labour rows will be dynamically added here by JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Add New Labour</h2>
+        <form id="addLabourForm">
+            <input type="text" name="name" placeholder="Labour Name" required>
+            <input type="time" name="inTime" required>
+            <input type="time" name="outTime" required>
+            <button type="submit">Add Labour</button>
+        </form>
+    </section>
+
+    <script src="add-labour.js"></script>
+</body>
+</html>

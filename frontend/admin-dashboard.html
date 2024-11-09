@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Scout ERP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <a href="logout.html">Logout</a> <!-- Updated to navigate to logout.html -->
+        </nav>
+    </header>
+
+    <section class="dashboard">
+        <!-- Manage Sales Managers Section -->
+        <div class="dashboard-box">
+            <h2>Manage Sales Managers</h2>
+            <button onclick="window.location.href='manage-sales-managers.html'">View & Manage Sales Managers</button>
+        </div>
+
+        <!-- Manage Labours Section -->
+        <div class="dashboard-box">
+            <h2>Manage Labours</h2>
+            <button onclick="window.location.href='manage-labours.html'">View & Manage Labours</button>
+        </div>
+
+        <!-- View Locations Section -->
+        <div class="dashboard-box">
+            <h2>View Locations</h2>
+            <button onclick="viewLocations()">View Sales Managers & Labours Locations</button>
+        </div>
+    </section>
+
+    <script src="admin-dashboard.js"></script>
+</body>
+</html> 
